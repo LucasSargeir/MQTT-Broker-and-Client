@@ -30,7 +30,7 @@ class MQTT_Client:
 		else:
 			self.client_id = f'User-{random.randint(0, 1000)}'
 		
-		self.client = mqtt_client.Client(self.client_id, clean_session=False)
+		self.client = mqtt_client.Client(self.client_id, clean_session = False)
 		self.client.on_connect = on_connect
 		self.client.on_disconnect = on_disconnect
 
