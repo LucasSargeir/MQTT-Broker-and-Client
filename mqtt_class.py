@@ -10,7 +10,8 @@ class MQTT_Client:
 	# topic = "/python/mqtt"
 
 	def __init__(self, port = 7777, topic = 'deafult-topic', broker = '127.0.0.1', client_id = None, user = None, password = None):
-			if rc == , user = None, password = None0:
+		def on_connect(client, userdata, flags, rc):	
+			if rc == 0:
 				print(f'[STATUS-{rc}] Conectado ao MQTT Broker!\n')
 			else:
 				print(f'[STATUS-{rc}] A conexão falhou!\n')
