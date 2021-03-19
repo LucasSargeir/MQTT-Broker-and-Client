@@ -1,4 +1,4 @@
-# Servidor TCP Concorrente
+# Broker MQTT e Clientes Publish e Subscribe
 
 Implementação de clientes MQTT publish e subscribe, e um Broker para troca de mensagens. A prosposta foi implementar o o serviço para troca de mensagens de forma persistente.
 
@@ -79,6 +79,6 @@ Para executar cada módulo do sistema siga as instruções abaixo:
   python publish_MQTT.py
   
   # Subscriber
-  subscribe_MQTT.py
+  python subscribe_MQTT.py
   ```
 
